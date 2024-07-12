@@ -19,4 +19,22 @@
 
 # Go workspace file
 go.work
-go.work.sum
+
+
+# Project
+.vscode
+.history
+godepgraph.png
+config/*.yml
+common/config/yaml/*.yml
+!common/config/yaml/config.dist.yml
+!common/config/yaml/config.test.yml
+public/system
+tmp
+logs/*
+!logs/.gitkeep
+__debug_bin
+shutterstock-downloader
+result.csv
+images
+log.txt
