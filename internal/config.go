@@ -10,6 +10,7 @@ type Config struct {
 	retryTimeout int
 	token        string
 	csvFilename  string
+	imagesDir    string
 }
 
 // NewConfig returns the configuration object.
@@ -21,6 +22,7 @@ func NewConfig() *Config {
 		retryTimeout: viper.GetInt("retry_timeout"),
 		token:        viper.GetString("token"),
 		csvFilename:  viper.GetString("csv_filename"),
+		imagesDir:    viper.GetString("images_dir"),
 	}
 
 	return config

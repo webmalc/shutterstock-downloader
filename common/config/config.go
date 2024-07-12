@@ -35,6 +35,7 @@ func setDefaults(baseDir string) {
 	viper.SetDefault("retry_count", retryCount)
 	viper.SetDefault("retry_timeout", retryTimeout)
 	viper.SetDefault("csv_filename", "result.csv")
+	viper.SetDefault("images_dir", "images/")
 }
 
 // setPaths set paths.

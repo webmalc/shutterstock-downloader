@@ -58,7 +58,7 @@ func (a *API) GetDownloadLink(id string) (*DownloadLink, error) {
 
 // DownloadImage downloads the image.
 func (a *API) DownloadImage(id, url string) error {
-	resp, err := a.client.R().SetOutput("images/" + id + ".jpg").Get(url)
+	resp, err := a.client.R().SetOutput(a.config.imagesDir + id + ".jpg").Get(url)
 	if err != nil {
 		return err
 	}
